@@ -13,7 +13,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
             println!("No diff found.");
         }
         Some(commit_message) => {
-            println!("{commit_message}");
+            println!("COMMIT MESSAGE: {commit_message}");
         }
     }
     Ok(())

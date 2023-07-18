@@ -7,12 +7,12 @@ pub struct Args {
     #[arg(
     short,
     long,
-    default_value = "Generate a one line Git commit message based on the following diff:"
+    default_value = "Generate a Git commit message based on the following diff:"
     )]
     pub prompt: String,
 
-    /// Which GPT model to use. Please note that to use GPT 4, you need to be a Plus subscriber.
-    #[arg(short, long, value_enum, default_value_t = Model::GPT35)]
+    /// Which GPT model to use.
+    #[arg(short, long, value_enum, default_value_t = Model::GPT4)]
     pub model: Model,
 
     /// The maximum amount of tokens to generate. Tokens as pieces of words, where 1,000 tokens is about 750 words.
