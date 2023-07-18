@@ -10,17 +10,23 @@ Generates commit messages for your staged (but unpushed) commits using ChatGPT.
    ```bash
     export OPENAI_API_KEY='sk-...'
     ```
-   
+ 
+## Installation
+
+```bash
+$ cargo install commit-gpt
+```
+
 ## Usage
 
 ```bash
 -- Stage your changes
-git add -A
-cargo run
+$ git add -A
+$ commit-gpt
 -- Commit message will be printed, as such:
-COMMIT MESSAGE: Update README.md with instructions..
+$ COMMIT MESSAGE: Update README.md with instructions..
 -- It will also be copied to your clipboard, so you can just paste.
-git commit -m "..."
+$ git commit -m "..."
 ```
 
 ## Options

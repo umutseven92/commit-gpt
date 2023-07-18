@@ -1,7 +1,15 @@
 [package]
 name = "commit-gpt"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
+authors = ["Umut Seven <umutseven92@gmail.com>"]
+license = "MIT"
+description = "Generate git commit messages using ChatGPT."
+readme = "README.md"
+homepage = "https://github.com/umutseven92/commit-gpt"
+repository = "https://github.com/umutseven92/commit-gpt"
+keywords = ["cli", "git", "commit", "chatgpt", "gpt", "openai"]
+categories = ["command-line-utilities"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
